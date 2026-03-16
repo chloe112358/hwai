@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>王敏軒｜數位名片</title>
+    <meta name="description" content="王敏軒的個人數位名片（Notion 風格）" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Noto+Sans+TC:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="bg" id="bg" aria-hidden="true">
+      <div class="wallpaper" id="wallpaper" aria-hidden="true"></div>
+    </div>
+
+    <main class="page" id="page">
+      <section class="card" id="card" aria-label="個人數位名片">
+        <div class="cardFx" aria-hidden="true"></div>
+        <div class="peek" id="peek" aria-hidden="true">
+          <img src="./assets/beaver.png" alt="" draggable="false" />
+        </div>
+
+        <div class="avatar" aria-label="大頭照佔位符">
+          <img src="./assets/beaver.png" alt="河狸貼紙" draggable="false" />
+        </div>
+
+        <h1 class="name">王敏軒</h1>
+        <p class="subtitle">
+          我是熱愛<span class="em emBeaver">河狸</span>的<span class="em emSchool">陽明交通研究所</span>學生
+        </p>
+
+        <div class="links" aria-label="社群連結">
+          <a class="btn" href="#" data-kind="ig" aria-label="Instagram（點擊互動示意）">
+            <span class="btnIcon" aria-hidden="true">◎</span>
+            <span class="btnLabel">IG</span>
+          </a>
+          <a class="btn" href="#" data-kind="email" aria-label="Email（點擊互動示意）">
+            <span class="btnIcon" aria-hidden="true">✉</span>
+            <span class="btnLabel">Email</span>
+          </a>
+          <a class="btn" href="#" data-kind="github" aria-label="GitHub（點擊互動示意）">
+            <span class="btnIcon" aria-hidden="true">⌂</span>
+            <span class="btnLabel">GitHub</span>
+          </a>
+        </div>
+
+        <p class="tip" id="tip">點背景換河狸壁紙；點名片有小驚喜。</p>
+      </section>
+    </main>
+
+    <div class="toast" id="toast" role="status" aria-live="polite" aria-atomic="true"></div>
+    <script src="./script.js" defer></script>
+  </body>
+</html>
