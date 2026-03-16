@@ -278,7 +278,6 @@ bgEl.addEventListener("click", (e) => {
   generateWallpaper(mode.id);
   spawnStickers(e.clientX, e.clientY);
   setTip("點背景切換河狸壁紙；點名片有小驚喜。");
-  showToast(`背景主題：${mode.label}`);
 });
 
 // Also allow clicking anywhere outside the card (mobile friendly).
@@ -291,7 +290,6 @@ pageEl.addEventListener("click", (e) => {
   generateWallpaper(mode.id);
   spawnStickers(e.clientX ?? window.innerWidth / 2, e.clientY ?? window.innerHeight / 2);
   setTip("點背景切換河狸壁紙；點名片有小驚喜。");
-  showToast(`背景主題：${mode.label}`);
 });
 
 // Card surprise: click to toggle peek + soft gloss.
